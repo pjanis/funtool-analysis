@@ -1,0 +1,25 @@
+- first_analysis:
+
+# Each process in the list should be formatted as
+# - process_type: process_name
+
+  - adaptor: conf_adaptor
+  - state_measure: count_blocks
+  - state_measure: random_count_blocks
+  - grouping_selector: all
+  - group_measure: count
+  - group_measure: average_doIf
+  - state_measure: broadcasts_sent_to_received
+  - state_measure: when_blocks
+  - reporter: save_states_tsv
+  - reporter: save_states_csv
+  - reporter: save_groups_csv
+
+- second_analysis:
+  - adaptor: conf_adaptor
+  - state_measure: count_blocks
+  - state_measure: total_scripts
+  - state_measure: green_flag_scripts
+  - state_measure: green_flag_to_total_scripts
+  - reporter: greenflag_ratio_csv
+  - reporter: greenflag_ratio_tsv

@@ -1,0 +1,9 @@
+trivial:
+  selector_module: funtool_scratch_processes.analysis_selectors.default
+  selector_function: trivial
+  parameters : !!null
+
+random:
+  selector_module: funtool_scratch_processes.analysis_selectors.default
+  selector_function: random_state
+  parameters : !!null

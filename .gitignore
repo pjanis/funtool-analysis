@@ -1,0 +1,14 @@
+# OSX 
+.DS_Store
+
+# Python Byte-compiled
+__pycache__/
+*.py[cod]
+
+# Vim swap
+*.sw*
+
+# Data used for testing
+data/*
+output/*
+logs/*

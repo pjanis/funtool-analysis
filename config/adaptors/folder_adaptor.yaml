@@ -1,0 +1,14 @@
+test_adaptor:
+  adaptor_module: funtool_scratch_processes.adaptors.autosave_directory
+  adaptor_function: import_projects_directory
+  data_location: data/test
+
+fall_example_adaptor:
+  adaptor_module: funtool_scratch_processes.adaptors.autosave_directory
+  adaptor_function: import_projects_directory
+  data_location: data/fall_example
+
+conf_adaptor:
+  adaptor_module: funtool_scratch_processes.adaptors.autosave_directory
+  adaptor_function: import_projects_directory
+  data_location: data/Scratch_Conf_data

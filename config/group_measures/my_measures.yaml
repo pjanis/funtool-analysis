@@ -1,0 +1,19 @@
+count:
+  measure_module: funtool_scratch_processes.group_measures.default
+  measure_function: count
+  analysis_selectors: !!null
+  grouping_selectors: 
+    - all
+    - project_directory
+  parameters: !!null
+  
+average_doIf:
+  measure_module: funtool_scratch_processes.group_measures.default
+  measure_function: average
+  analysis_selectors: !!null
+  grouping_selectors: 
+    - all
+    - project_directory
+  parameters:
+    average_type: measures
+    average_value: doIf_count

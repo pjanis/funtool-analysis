@@ -1,0 +1,5 @@
+all:
+  selector_module: funtool_scratch_processes.grouping_selectors.default
+  selector_function: all
+  parameters : !!null
+

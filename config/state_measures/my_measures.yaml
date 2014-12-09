@@ -1,0 +1,99 @@
+store_value:
+  measure_module: funtool_scratch_processes.state_measures.default
+  measure_function: record_parameters
+  analysis_selectors: !!null
+  grouping_selectors: !!null
+  parameters:
+    - parameter_name: test_value
+      parameter_value: hello
+
+count_blocks:
+  measure_module: funtool_scratch_processes.state_measures.default
+  measure_function: block_counts
+  analysis_selectors: !!null
+  grouping_selectors: !!null
+  parameters: !!null
+
+random_count_blocks:
+  measure_module: funtool_scratch_processes.state_measures.default
+  measure_function: block_counts
+  analysis_selectors:
+    - random 
+  grouping_selectors: 
+    - all
+  parameters: !!null
+
+broadcasts_sent_to_received:
+  measure_module: funtool_scratch_processes.state_measures.default
+  measure_function: measure_ratio
+  analysis_selectors: !!null
+  grouping_selectors: !!null
+  parameters:
+    first_measure: broadcast:_count 
+    second_measure: whenIReceive_count 
+    measure_default: 0
+    ratio_name: broadcasts_sent_to_received
+
+all_ratios:
+  measure_module: code.state_measures.my_measure_code
+  measure_function: all_ratios
+  analysis_selectors: !!null
+  grouping_selectors: !!null
+  parameters: !!null
+
+creation_time_from_filename:
+  measure_module: funtool_scratch_processes.state_measures.default
+  measure_function: creation_time_from_filename
+  analysis_selectors: !!null
+  grouping_selectors: !!null
+  parameters: !!null
+
+total_scripts:
+  measure_module: funtool_scratch_processes.state_measures.default
+  measure_function: total_scripts 
+  analysis_selectors: !!null
+  grouping_selectors: !!null
+  parameters: !!null
+  
+
+green_flag_scripts:
+  measure_module: funtool_scratch_processes.state_measures.default
+  measure_function:  scripts_with_block
+  analysis_selectors: !!null
+  grouping_selectors: !!null
+  parameters:
+    block_name: whenGreenFlag 
+
+green_flag_to_total_scripts:
+  measure_module: funtool_scratch_processes.state_measures.default
+  measure_function: measure_ratio
+  analysis_selectors: !!null
+  grouping_selectors: !!null
+  parameters:
+    first_measure: whenGreenFlag_count 
+    second_measure: total_scripts 
+    measure_default: 0
+    ratio_name: green_flag_to_total_scripts
+
+total_sprites:
+  measure_module: funtool_scratch_processes.state_measures.default
+  measure_function: total_sprites 
+  analysis_selectors: !!null
+  grouping_selectors: !!null
+  parameters: !!null
+
+when_blocks:
+  measure_module: funtool_scratch_processes.state_measures.default
+  measure_function: number_of_blocks_of_type 
+  analysis_selectors: !!null
+  grouping_selectors: !!null
+  parameters:
+    measure_name: when_blocks
+    blocks:
+      - whenClicked
+      - whenGreenFlag 
+      - whenIReceive
+      - whenKeyPressed 
+      - whenSceneStarts
+    
+  
