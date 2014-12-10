@@ -96,4 +96,9 @@ when_blocks:
       - whenKeyPressed 
       - whenSceneStarts
     
-  
+number_of_scripts:
+  measure_module: code.state_measures.my_measure_code
+  measure_function: number_of_scripts 
+  analysis_selectors: !!null
+  grouping_selectors: !!null
+  parameters: !!null

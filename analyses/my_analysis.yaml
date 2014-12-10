@@ -5,7 +5,7 @@
 
   - adaptor: conf_adaptor
   - state_measure: count_blocks
-  - state_measure: random_count_blocks
+  - state_measure: number_of_scripts
   - grouping_selector: all
   - group_measure: count
   - group_measure: average_doIf
