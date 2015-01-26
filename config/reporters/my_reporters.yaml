@@ -49,3 +49,16 @@ save_groups_csv:
     filename: groups
     file_type: csv
     overwrite: true
+
+
+sample_state:
+  reporter_module: funtool_scratch_processes.reporters.sampling_reporters
+  reporter_function: save_sample
+  parameters:
+    output_to:
+      - file
+#      - stdio
+    save_directory: output
+    filename: sample_state
+    print_depth: 4
+    

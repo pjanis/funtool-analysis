@@ -3,9 +3,17 @@
 # Each process in the list should be formatted as
 # - process_type: process_name
 
-  - adaptor: conf_adaptor
+  - adaptor: summer_adaptor
   - state_measure: count_blocks
   - state_measure: number_of_scripts
+  - state_measure: store_value
+  - state_measure: creation_time
+  - state_measure: green_flag_scripts
+  - state_measure: total_sprites
+  - state_measure: total_sprites_with_scripts
+  - state_measure: green_flag_sprites
+  - state_measure: control_blocks
+  - reporter: sample_state
   - grouping_selector: all
   - group_measure: count
   - group_measure: average_doIf
@@ -15,11 +23,11 @@
   - reporter: save_states_csv
   - reporter: save_groups_csv
 
-- second_analysis:
-  - adaptor: conf_adaptor
-  - state_measure: count_blocks
-  - state_measure: total_scripts
-  - state_measure: green_flag_scripts
-  - state_measure: green_flag_to_total_scripts
-  - reporter: greenflag_ratio_csv
-  - reporter: greenflag_ratio_tsv
+#- second_analysis:
+#  - adaptor: summer_adaptor
+#  - state_measure: count_blocks
+#  - state_measure: total_scripts
+#  - state_measure: green_flag_scripts
+#  - state_measure: green_flag_to_total_scripts
+#  - reporter: greenflag_ratio_csv
+#  - reporter: greenflag_ratio_tsv

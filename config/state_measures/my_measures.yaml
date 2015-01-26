@@ -4,8 +4,9 @@ store_value:
   analysis_selectors: !!null
   grouping_selectors: !!null
   parameters:
-    - parameter_name: test_value
-      parameter_value: hello
+    values: 
+      - parameter_name: test_value
+        parameter_value: hello
 
 count_blocks:
   measure_module: funtool_scratch_processes.state_measures.default
@@ -32,7 +33,6 @@ broadcasts_sent_to_received:
     first_measure: broadcast:_count 
     second_measure: whenIReceive_count 
     measure_default: 0
-    ratio_name: broadcasts_sent_to_received
 
 all_ratios:
   measure_module: code.state_measures.my_measure_code
@@ -41,7 +41,7 @@ all_ratios:
   grouping_selectors: !!null
   parameters: !!null
 
-creation_time_from_filename:
+creation_time:
   measure_module: funtool_scratch_processes.state_measures.default
   measure_function: creation_time_from_filename
   analysis_selectors: !!null
@@ -82,6 +82,40 @@ total_sprites:
   grouping_selectors: !!null
   parameters: !!null
 
+total_sprites_with_scripts:
+  measure_module: funtool_scratch_processes.state_measures.default
+  measure_function: number_of_scripted_sprites 
+  analysis_selectors: !!null
+  grouping_selectors: !!null
+  parameters: !!null
+
+green_flag_sprites:
+  measure_module: funtool_scratch_processes.state_measures.default
+  measure_function:  number_of_sprites_with_block
+  analysis_selectors: !!null
+  grouping_selectors: !!null
+  parameters:
+    block_name: whenGreenFlag 
+
+control_blocks:
+  measure_module: funtool_scratch_processes.state_measures.default
+  measure_function:  sum_measures
+  analysis_selectors: !!null
+  grouping_selectors: !!null
+  parameters:
+    measures:
+      - wait:elapsed:from:_count
+      - doRepeat_count
+      - doForever_count
+      - doIf_count
+      - doIfElse_count
+      - doUntil_count
+      - stopScripts_count
+      - whenCloned_count
+      - createCloneOf_count
+      - deleteClone_count
+
+
 when_blocks:
   measure_module: funtool_scratch_processes.state_measures.default
   measure_function: number_of_blocks_of_type 
@@ -102,3 +136,16 @@ number_of_scripts:
   analysis_selectors: !!null
   grouping_selectors: !!null
   parameters: !!null
+#number_of_sprites:
+#  measure_module: code.state_measures.my_measure_code
+#  measure_function: number_of_sprites
+#  analysis_selectors: !!null
+#  grouping_selectors: !!null
+#  parameters: !!null
+
+#state_info: 
+#  measure_module: code.state_measures.my_measure_code
+#  measure_function: state_info
+#  analysis_selectors:
+#  group_selectors:
+#  parameters: !!null

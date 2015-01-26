@@ -27,3 +27,32 @@ def state_scripts(state):
         for child in json_data.get('children'):
             scripts.extend(child.get('scripts',[]))
     return scripts
+
+    #1. Counting number of Sprites
+#@funtool.state_measure.state_and_parameter_measure
+#def number_of_sprites(state,parameters):
+#    json_data = state.data.get('json')
+#    sprites=[]
+#    if json_data != None:
+#        sprites.extend(json_data.get('info',[]))
+#    return sprites.spriteCount
+#
+#
+##2(a). Counting number of Scripts 
+#@funtool.state_measure.state_and_parameter_measure
+#def number_of_scripts(state,parameters):
+#    json_data = state.data.get('json')
+#    scripts=[]
+#    if json_data != None:
+#        scripts.extend(json_data.get('info',[]))
+#    return scripts.scriptCount
+#
+#
+##3. Getting out all info for that state
+#@funtool.state_measure.state_and_parameter_measure
+#def state_info(state,parameters):
+#    json_data = state.data.get('json')
+#    info=[]
+#    if json_data != None:
+#        info.extend(json_data.get('info',[]))
+#    return info

@@ -12,3 +12,8 @@ conf_adaptor:
   adaptor_module: funtool_scratch_processes.adaptors.autosave_directory
   adaptor_function: import_projects_directory
   data_location: data/Scratch_Conf_data
+
+summer_adaptor:
+  adaptor_module: funtool_scratch_processes.adaptors.autosave_directory
+  adaptor_function: import_projects_directory
+  data_location: data/example_project
