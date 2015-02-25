@@ -4,7 +4,8 @@ count:
   analysis_selectors: !!null
   grouping_selectors: 
     - all
-    - project_directory
+    - projects_directory
+    - total_sprites
   parameters: !!null
   
 average_doIf:
@@ -13,7 +14,7 @@ average_doIf:
   analysis_selectors: !!null
   grouping_selectors: 
     - all
-    - project_directory
+    - projects_directory
   parameters:
     average_type: measures
     average_value: doIf_count

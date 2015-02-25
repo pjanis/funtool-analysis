@@ -12,3 +12,8 @@ __pycache__/
 data/*
 output/*
 logs/*
+
+# Include directories as placeholders
+!data/.keep
+!output/.keep
+!logs/.keep

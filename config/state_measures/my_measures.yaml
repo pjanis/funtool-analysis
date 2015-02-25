@@ -35,7 +35,7 @@ broadcasts_sent_to_received:
     measure_default: 0
 
 all_ratios:
-  measure_module: code.state_measures.my_measure_code
+  measure_module: my_code.state_measures.my_measure_code
   measure_function: all_ratios
   analysis_selectors: !!null
   grouping_selectors: !!null
@@ -131,20 +131,20 @@ when_blocks:
       - whenSceneStarts
     
 number_of_scripts:
-  measure_module: code.state_measures.my_measure_code
+  measure_module: my_code.state_measures.my_measure_code
   measure_function: number_of_scripts 
   analysis_selectors: !!null
   grouping_selectors: !!null
   parameters: !!null
 #number_of_sprites:
-#  measure_module: code.state_measures.my_measure_code
+#  measure_module: my_code.state_measures.my_measure_code
 #  measure_function: number_of_sprites
 #  analysis_selectors: !!null
 #  grouping_selectors: !!null
 #  parameters: !!null
 
 #state_info: 
-#  measure_module: code.state_measures.my_measure_code
+#  measure_module: my_code.state_measures.my_measure_code
 #  measure_function: state_info
 #  analysis_selectors:
 #  group_selectors:
