@@ -2,7 +2,8 @@
 example_directory_adaptor:
   adaptor_module: funtool_scratch_processes.adaptors.autosave_directory
   adaptor_function: import_directory
-  data_location: data/example_directory
+  parameters:
+    data_location: data/example_directory
 
 # Imports all sub-directories in data/example_projects
 # Assumes each sub-directory is a project id
@@ -10,7 +11,8 @@ example_directory_adaptor:
 example_projects_adaptor:
   adaptor_module: funtool_scratch_processes.adaptors.autosave_directory
   adaptor_function: import_projects_directory
-  data_location: data/example_projects
+  parameters:
+    data_location: data/example_projects
 
 # Imports all sub-directories in data/example_users
 # Assumes each sub-directory is a user id and each sub-sub-directory is a project id
@@ -18,5 +20,6 @@ example_projects_adaptor:
 example_users_adaptor:
   adaptor_module: funtool_scratch_processes.adaptors.autosave_directory
   adaptor_function: import_users_directory
-  data_location: data/example_users
+  parameters:
+    data_location: data/example_users
 

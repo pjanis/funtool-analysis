@@ -3,7 +3,7 @@
 # Each process in the list should be formatted as
 # - process_type: process_name
 
-  - adaptor: example_projects_adaptor
+  - adaptor: example_users_adaptor
   - state_measure: count_blocks
   - state_measure: number_of_scripts
   - state_measure: store_value

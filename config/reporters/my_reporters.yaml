@@ -50,19 +50,6 @@ save_groups_csv:
     file_type: csv
     overwrite: true
 
-plot_number_of_scripts:
-  reporter_module: my_code.reporters.graphing_reporters
-  reporter_function: scatter_plot
-  parameters:
-    save_directory: output
-    filename: scripts_plot
-    file_type: png
-    x_value: total_scripts
-    y_value: green_flag_scripts
-    series_grouping: project_directory
-    
-
-
 sample_state:
   reporter_module: funtool_scratch_processes.reporters.sampling_reporters
   reporter_function: save_sample
