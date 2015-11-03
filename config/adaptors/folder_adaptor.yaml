@@ -22,4 +22,3 @@ example_users_adaptor:
   adaptor_function: import_users_directory
   parameters:
     data_location: data/example_users
-

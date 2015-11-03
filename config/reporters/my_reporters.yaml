@@ -7,7 +7,6 @@ save_states_tsv:
     file_type: tsv
     overwrite: true
 
-
 save_states_csv:
   reporter_module: funtool_scratch_processes.reporters.save_states_to_file
   reporter_function: save
@@ -16,31 +15,7 @@ save_states_csv:
     filename: states
     file_type: csv
     overwrite: true
-
-greenflag_ratio_csv:
-  reporter_module: funtool_scratch_processes.reporters.save_group_info_to_file
-  reporter_function: save
-  parameters:
-    save_directory: output
-    filename: greenflag_ratio
-    file_type: csv
-    overwrite: true
-    grouping_value: directory 
-    grouping_value_type: meta
-    reporting_value: green_flag_to_total_scripts
-
-greenflag_ratio_tsv:
-  reporter_module: funtool_scratch_processes.reporters.save_group_info_to_file
-  reporter_function: save
-  parameters:
-    save_directory: output
-    filename: greenflag_ratio
-    file_type: tsv
-    overwrite: true
-    grouping_value: directory 
-    grouping_value_type: meta
-    reporting_value: green_flag_to_total_scripts
-
+    
 save_groups_csv:
   reporter_module: funtool_scratch_processes.reporters.save_groups_to_file
   reporter_function: save

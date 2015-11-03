@@ -5,8 +5,8 @@ store_value:
   grouping_selectors: !!null
   parameters:
     values: 
-      - parameter_name: test_value
-        parameter_value: hello
+     - parameter_name: test_value
+       parameter_value: hello
 
 count_blocks:
   measure_module: funtool_scratch_processes.state_measures.default
